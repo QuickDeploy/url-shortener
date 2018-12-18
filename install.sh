@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if [ ! -d /data ]; then
-    echo "Make sure dir /data exists and this user has read/write access !"
-    exit 1;
+	echo "Make sure dir /data exists and this user has read/write access !"
+	exit 1;
 fi
 
 mkdir -p /data/us/redis
@@ -22,6 +22,6 @@ docker pull quickdeploy/url-shortener:0.2
 
 echo "Please wait until services started"
 
-echo "Use `docker service ps us-` to see the status"
+echo "Use 'docker service ps us-' to see the status"
 
 echo "After started, visit http://127.0.0.1/install.php` to setup the system"

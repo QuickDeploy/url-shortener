@@ -3,9 +3,9 @@
 docker service create \
 	--name us-web \
 	--hostname us-web \
-	--network us-net \
+	--network swarm-net \
 	--replicas 1 \
-	--publish 80:80 \
+	--publish mode=host,published=80,target=80 \
 	--mount type=bind,source=/etc/localtime,target=/etc/localtime \
 	--mount type=bind,source=/data/us/web/config,target=/config \
 	--mount type=bind,source=/data/us/web/logs,target=/var/log/apache2 \
