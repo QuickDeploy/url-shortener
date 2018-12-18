@@ -5,7 +5,6 @@ docker service create \
 	--hostname us-web \
 	--network us-net \
 	--replicas 1 \
-	--detach=true \
 	--publish 80:80 \
 	--mount type=bind,source=/etc/localtime,target=/etc/localtime \
 	--mount type=bind,source=/data/us/web/config,target=/config \
