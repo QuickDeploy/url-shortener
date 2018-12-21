@@ -25,6 +25,8 @@ docker service rm us-redis
 
 rm -rf /data/us/
 
+sleep 5
+
 docker rmi redis:5
 docker rmi mysql:5.7
 docker rmi quickdeploy/url-shortener:0.2

@@ -1,4 +1,4 @@
-FROM newnius/php:7.1
+FROM newnius/php:7.3
 
 MAINTAINER Newnius <docker@newnius.com>
 

@@ -2,7 +2,7 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
-if [ ! -d /data ]; then
+if [[ ! -d /data ]]; then
 	echo "Make sure dir /data exists and this user has read/write access !"
 	exit 1;
 fi
@@ -24,6 +24,6 @@ bash "${DIR}/swarm_start_web.sh"
 
 echo "Please wait until services started"
 
-echo "Use 'docker service ps us-' to see the status"
+echo "Use 'docker service ls | grep us-' to see the status"
 
 echo "After started, visit http://127.0.0.1/install.php to setup the system"
