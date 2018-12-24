@@ -36,7 +36,7 @@ visit `http://127.0.0.1/install.php` to init the system, and you will see four `
 
 First of all, login to [QuickAuth](https://quickauth.newnius.com/) and register for an account.
 
-After login, visit `Admin` > `Sites` > `Add` , and add your server ip / domain (without `http://`, `/` or `sub dir`)
+After login, visit `Sites` > `Add` , and add your server ip / domain (without `http://`, `/` or `sub dir`)
 
 Click `View`, you can see the `ClientID` and `ClientSecret`, they will be used in the *Part 2*
 
