@@ -23,7 +23,6 @@ docker service rm us-mysql
 docker service rm us-redis
 
 
-rm -rf /data/us/
 
 sleep 5
 
@@ -32,3 +31,5 @@ docker rmi mysql:5.7
 docker rmi quickdeploy/url-shortener:0.2
 
 echo "All data & services removed !"
+
+echo "Run 'rm -rf /data/us/' to remove all the data"
