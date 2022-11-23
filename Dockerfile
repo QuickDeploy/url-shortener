@@ -2,10 +2,10 @@ FROM newnius/php:7.3
 
 MAINTAINER Newnius <docker@newnius.com>
 
-RUN curl -L https://github.com/newnius/short-link/archive/0.2.3.tar.gz > /tmp/shortlink.tar.gz \
+RUN curl -L https://github.com/newnius/short-link/archive/0.2.4.tar.gz > /tmp/shortlink.tar.gz \
 	&& tar -C /tmp -xzvf /tmp/shortlink.tar.gz \
-	&& mv /tmp/short-link-0.2.3/.htaccess /var/www/html \
-	&& mv /tmp/short-link-0.2.3/* /var/www/html \
+	&& mv /tmp/short-link-0.2.4/.htaccess /var/www/html \
+	&& mv /tmp/short-link-0.2.4/* /var/www/html \
 	&& rm -rf /tmp/*
 
 
